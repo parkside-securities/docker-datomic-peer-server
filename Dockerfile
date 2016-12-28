@@ -20,9 +20,8 @@ ONBUILD RUN curl -u $(cat /tmp/.credentials) -SL https://my.datomic.com/repo/com
 
 WORKDIR $DATOMIC_HOME
 
-# 3. Provide a CMD with an alias to the database
-# and the database uri
-# e.g. CMD ["dev", "datomic:dev://db:4334/"]
-ENTRYPOINT ["bin/run", "-m", "datomic.peer-server", "-p", "9001"]
+# 3. Provide a CMD with value for option -a and for option -d as many as required
+# e.g. CMD ["-a", "ak,ys", "-d", "mbrainz,datomic:dev://datomicdb:4334/mbrainz-1968-1973"]
+ENTRYPOINT ["bin/run", "-m", "datomic.peer-server", "-h", "0.0.0.0", "-p", "9001"]
 
 EXPOSE 9001

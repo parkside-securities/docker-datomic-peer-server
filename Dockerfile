@@ -1,8 +1,8 @@
-FROM clojure:lein-2.6.1-alpine
+FROM clojure:lein-alpine
 
-MAINTAINER Michael Frericks "michael-frericks@web.de"
+MAINTAINER Kenji Nakamura "knakamura@parksidesecurities.com"
 
-ENV DATOMIC_VERSION 0.9.5544
+ENV DATOMIC_VERSION 0.9.5697
 ENV DATOMIC_HOME /opt/datomic-pro-$DATOMIC_VERSION
 
 RUN apk add --no-cache unzip curl

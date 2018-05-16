@@ -22,6 +22,6 @@ WORKDIR $DATOMIC_HOME
 
 # 3. Provide a CMD with value for option -a and for option -d as many as required
 # e.g. CMD ["-a", "ak,ys", "-d", "mbrainz,datomic:dev://datomicdb:4334/mbrainz-1968-1973"]
-ENTRYPOINT ["bin/run", "-m", "datomic.peer-server", "-h", "0.0.0.0", "-p", "9001"]
+ENTRYPOINT ["bin/run", "-m", "datomic.peer-server", "-h", "0.0.0.0", "-p", "8998"]
 
-EXPOSE 9001
+EXPOSE 8998

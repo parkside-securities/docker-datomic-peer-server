@@ -2,7 +2,7 @@ FROM clojure:lein-alpine
 
 MAINTAINER Kenji Nakamura "knakamura@parksidesecurities.com"
 
-ENV DATOMIC_VERSION 0.9.5697
+ENV DATOMIC_VERSION 0.9.5951
 ENV DATOMIC_HOME /opt/datomic-pro-$DATOMIC_VERSION
 
 RUN apk add --no-cache unzip curl

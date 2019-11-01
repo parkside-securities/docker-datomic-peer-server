@@ -30,7 +30,7 @@ No other configuration is necessary. Simply **docker build** and
 
 ## Example Dockerfile
 
-    FROM quay.io/parkside-securities/datomic-peer-server:0.9.5697
+    FROM quay.io/parkside-securities/datomic-peer-server:0.9.5981
     MAINTAINER John Doe "jdoe@example.org"
     CMD ["-a", "your-access-key,your-secret", -d", "my-db,datomic:dev://db:4334/"]
 
